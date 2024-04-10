@@ -61,14 +61,3 @@ if submit:
     st.subheader("The Response is")
     st.write(response)
 
-def hide_streamlit_logo():
-    # Hide the "hosted with Streamlit" logo
-    hide_css = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    </style>
-    """
-    st.markdown(hide_css, unsafe_allow_html=True)
-
-hide_streamlit_logo()

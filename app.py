@@ -34,9 +34,9 @@ def input_image_setup(uploaded_file):
 
 ## streamlit setup
 
-st.set_page_config(page_title="Polylingual Invoice Genius")
+st.set_page_config(page_title="GenAI Chat With Image")
 
-st.header("Polylingual Invoice Genius")
+st.header("GenAI Chat With Image")
 input=st.text_input("User Enquiry: ",key="input")
 uploaded_file = st.file_uploader("Choose an image of the invoice", type=["jpg", "jpeg", "png"])
 image=""   

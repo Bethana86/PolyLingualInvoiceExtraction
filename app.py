@@ -10,7 +10,7 @@ import google.generativeai as genai
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 ## Load Gemini pro vision
-model=genai.GenerativeModel('gemini-pro-vision')
+model=genai.GenerativeModel('gemini-2.0-flash-exp')
 
 def get_gemini_respose(input,image,prompt):
     response=model.generate_content([input,image[0],prompt])
